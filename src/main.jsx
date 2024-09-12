@@ -8,14 +8,16 @@ import MyPromisesAll from './functions/MyPromisesAll.jsx'
 import MyPromisesRace from './functions/MyPromiseRace.jsx'
 import MyFetchsAPIs from './functions/MyFetchs.jsx'
 import MyFetchsAPIsGET from './functions/MyFetchsGET.jsx'
+import MyFetchsAPIsPost from './functions/MyFetchPost.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
-    <MyFunctions></MyFunctions>
+    {/* <MyFunctions></MyFunctions> */}
     {/* <MyPromises></MyPromises> */}
     {/* <MyPromisesAll></MyPromisesAll> */}
     {/* <MyPromisesRace></MyPromisesRace> */}
     {/* <MyFetchsAPIsGET></MyFetchsAPIsGET> */}
+    <MyFetchsAPIsPost></MyFetchsAPIsPost>
   </StrictMode>,
 )

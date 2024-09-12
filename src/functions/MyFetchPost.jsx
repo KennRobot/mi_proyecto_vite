@@ -4,7 +4,7 @@ return (
     <>
         <div>
             <h1>
-                Programa para FETCH APIs GET
+                Programa para FETCH API POST
             </h1>
         </div>
    
