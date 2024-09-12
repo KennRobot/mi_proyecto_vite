@@ -35,7 +35,7 @@ function MyFunctions() {
         <>
             <div>
                 <h1>
-                    Programa de Funciones
+                    Programa de Funciones Basico
                 </h1>
             </div>
         </>
