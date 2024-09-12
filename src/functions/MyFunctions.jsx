@@ -1,4 +1,4 @@
-
+/* NOTA 3.2 */
 function MyFunctions() {
     //FIC: funcion que recibe un nuemero y le suma uno.
     // function fcnSumarUno( numero ) {

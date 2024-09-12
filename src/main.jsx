@@ -9,6 +9,7 @@ import MyPromisesRace from './functions/MyPromiseRace.jsx'
 import MyFetchsAPIs from './functions/MyFetchs.jsx'
 import MyFetchsAPIsGET from './functions/MyFetchsGET.jsx'
 import MyFetchsAPIsPost from './functions/MyFetchPost.jsx'
+import MyFetchAPIsBlob from './functions/MyFetchBlob.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     {/* <MyPromisesAll></MyPromisesAll> */}
     {/* <MyPromisesRace></MyPromisesRace> */}
     {/* <MyFetchsAPIsGET></MyFetchsAPIsGET> */}
-    <MyFetchsAPIsPost></MyFetchsAPIsPost>
+    {/* <MyFetchsAPIsPost></MyFetchsAPIsPost> */}
+    <MyFetchAPIsBlob></MyFetchAPIsBlob>
   </StrictMode>,
 )
