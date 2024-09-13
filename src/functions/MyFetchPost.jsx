@@ -6,7 +6,7 @@ function MyFetchsAPIsPost() {
         edad: 25
     }
 
-    //FIC: API POST de usuario.
+    //API POST de usuario.
 fetch('https://reqres.in/api/users', {
     method: 'POST',
     body: JSON.stringify(usuario), //data a enviar

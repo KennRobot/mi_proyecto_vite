@@ -1,8 +1,8 @@
 
 function MyPromises() {
-    //FIC: enviar a la consola "Hola Mundo".
+    //enviar a la consola "Hola Mundo".
     console.log('¡Hola Mundo!');
-    /* //FIC: funcion que recibe un nuemero y le suma uno.
+    /* //funcion que recibe un nuemero y le suma uno.
     function fcnSumarUno( numero ){
         var promesa = new Promise(function(resolve, reject){
             setTimeout(function(){
@@ -12,12 +12,12 @@ function MyPromises() {
       return promesa;
     } */
     /* PASO 7
-     //FIC: llamado de la funcion y promesa
+     //llamado de la funcion y promesa
     fcnSumarUno(5).then( nuevoNumero=>{
         console.log(nuevoNumero);
     }); */
 
-    //FIC: llamado de la funcion y promesa
+    //llamado de la funcion y promesa
     //de forma recursiva de manera encadenada.
 
     /*  PASO 9
@@ -38,7 +38,7 @@ function MyPromises() {
     console.log("Resultado:",nuevoNumero);
     }); */
 
-    //FIC: funcion que recibe un nuemero y le suma uno.
+    //funcion que recibe un nuemero y le suma uno.
 function fcnSumarUno( numero ){
     var promesa = new Promise(function(resolve, reject){
         if (numero >= 7 ){
@@ -51,7 +51,7 @@ function fcnSumarUno( numero ){
   return promesa;
 };
 
-//FIC: llamado de la funcion y promesa
+//llamado de la funcion y promesa
 //de forma recursiva y optimizada y con
 //validacion de error.
 fcnSumarUno(5)

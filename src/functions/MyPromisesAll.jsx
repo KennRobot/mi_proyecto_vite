@@ -1,6 +1,6 @@
 
 function MyPromisesAll() {
-//FIC: funcion que recibe un nuemero y le suma uno.
+//funcion que recibe un nuemero y le suma uno.
 function fcnSumarUno( numero ){
     var promesa = new Promise(function(resolve, reject){
         if (numero >= 7 ){
@@ -12,7 +12,7 @@ function fcnSumarUno( numero ){
     });
 return promesa;
 };
-//FIC: funcion normal que regresa una promesa
+//funcion normal que regresa una promesa
 //pero el resultado se obtiene mas lento.
 function fcnSumarLento( numero ){
     /* var promesa = new Promise(function(resolve, reject){
@@ -25,7 +25,7 @@ function fcnSumarLento( numero ){
     });
 };
 
-//FIC: esta es la manera mas optimizada de definir
+//esta es la manera mas optimizada de definir
 //una funcion pero de tipo arrow (flecha) que
 //tambien regresa una promesa pero el resultado
 //se obtiene mas rapido.
@@ -41,18 +41,18 @@ fcnSumarLento(5)
 .then(respuesta=>{
     console.log('Respuesta Lenta:', respuesta);
 });
-//FIC: llamado normal de la funcion sumar rapido y su promesa.
+//llamado normal de la funcion sumar rapido y su promesa.
 fcnSumarRapido(10)
 .then(respuesta=>{
     console.log('Respuesta Rapida:', respuesta);
 });
-//FIC: llamado de las 2 funciones y sus respectivas promesas al mismo tiempo.
+//llamado de las 2 funciones y sus respectivas promesas al mismo tiempo.
 // Promise.all([fcnSumarLento(5), fcnSumarRapido(10)])
 // .then(respuestas =>{
 //    console.log('Respuestas:', respuestas);
 // });
 let arregloVarios = [fcnSumarLento(5), fcnSumarRapido(10), true, '¡Hola Mundo!'];
-//FIC: llamado de las 2 funciones y sus respectivas promesas al mismo tiempo.
+//llamado de las 2 funciones y sus respectivas promesas al mismo tiempo.
 Promise.all(arregloVarios)
 .then(respuestas =>{
     console.log('Respuestas:', respuestas);

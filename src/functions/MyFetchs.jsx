@@ -6,15 +6,15 @@ function MyFetchsAPIs() {
     request.send(null);
     request.onreadystatechange = function( state ){
         if (request.readyState === 4) {
-            //KEN: la respuesta obtiene un string.
+            //la respuesta obtiene un string.
             var resp = request.response;
-            //KEN: ahora transformamos la cadena en formato
+            //ahora transformamos la cadena en formato
             var respObj = JSON.parse(resp);
             //KEN: enviamos el resultado a la consola.
             console.log( respObj );
-            //KEN: obtenemos solo la pagina actual.
+            //obtenemos solo la pagina actual.
             console.log( respObj.page);
-            //KEN: obtenemos solo la data de los usuarios.
+            //obtenemos solo la data de los usuarios.
             console.log( respObj.data);
         }   
     }
