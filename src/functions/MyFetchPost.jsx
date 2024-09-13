@@ -7,7 +7,7 @@ function MyFetchsAPIsPost() {
     }
 
     //API POST de usuario.
-fetch('https://reqres.in/api/users', {
+fetch('https://reqres.in/api/users/', {
     method: 'POST',
     body: JSON.stringify(usuario), //data a enviar
     headers: {

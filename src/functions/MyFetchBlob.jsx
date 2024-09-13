@@ -5,7 +5,7 @@ function MyFetchAPIsBlob(){
     let img1 = document.getElementById("IdImg1");
     let img2 = document.getElementById("IdImg2");
     //Fetch con codigo de promesa simplificada.
-    fetch('images/pwa-01.png')
+    fetch('../images/pwa-01.png')
     .then(resp => resp.blob())
     .then(image => {
         console.log(image);
@@ -14,7 +14,7 @@ function MyFetchAPIsBlob(){
         img1.src = imgPath1;
     });
     //Fetch con codigo de promesa normal.
-    fetch('images/pwa-02.png')
+    fetch('../images/pwa-02.png')
     .then(resp => {
         return resp.blob();
     })

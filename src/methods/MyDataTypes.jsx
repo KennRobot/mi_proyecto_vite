@@ -23,8 +23,7 @@ function MyDataTypes() {
                 <h1>
                     {IdNombre}
                 </h1>
-            </div>
-       
+            </div>       
         </>
     );
 };
