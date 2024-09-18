@@ -3,11 +3,12 @@ import React from 'react';
 import {useState} from 'react';
 export const Contador = () => {
     //use state para "valor"
-    const [valor, setValor] = useState(0);
-    //function for increment or decrement value
+    const [valor, setValor] = useState(1);
+    //funcion que incrementa o decrementa el valor automaticamente
     const acumular = (numero)=> {
         setValor(valor + numero);
     };
+    console.log(valor);
     return (
         <div>
            
