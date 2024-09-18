@@ -24,6 +24,6 @@ createRoot(document.getElementById('root')).render(
     {/* <MyFetchsAPIsPost></MyFetchsAPIsPost> */}
     {/* <MyFetchAPIsPUT></MyFetchAPIsPUT> */}
     {/* <MyFetchAPIsBlob></MyFetchAPIsBlob> */}
-    <MyDataTypes></MyDataTypes>
+    {/* <MyDataTypes></MyDataTypes> */}
   </StrictMode>,
 )
