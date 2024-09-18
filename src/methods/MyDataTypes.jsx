@@ -6,24 +6,57 @@ function MyDataTypes() {
 
     console.log("IdNombre:", IdNombre);
 
-    const FicNombre = "Kennby";
-    const FicApellidos = "Glez Dguez"
-    const FicNumControl = 706;
-    const FicNumControl2 = 10749;
-    const FicFechaReg = new Date();
-    let FicExperiencia = 23;
-    let FicActivo = true;
+    const Nombre = "Kennby";
+    const Apellidos = "Glez Dguez"
+    const NumControl = 706;
+    const NumControl2 = 10749;
+    const FechaReg = new Date();
+    let Experiencia = 23;
+    let Activo = true;
+    //Arreglos
+    let Pasatiempos = ['futbol ', 'basquet ', 'leer manga ', 'series y peliculas '];
+    //Agregamos elementos al arreglo
+    Pasatiempos.push(' loteria');
+    Pasatiempos.push(' baraja ');
+    Pasatiempos.push(706);
+    Pasatiempos.push(true);
+    console.log("Pasatiempos:", Pasatiempos);
+    let Libros = [];
+    Libros.push(1533);
+    Libros.push(true);
+    Libros.push("El Principito ");
+    console.log("Libros:", Libros);
    
     return (
         <>
             <div>
                 <h1>
-                    Programa para conocer diferentes Tipos de Datos 
+                    Programa para conocer diferentes Tipos de de Datos
                 </h1>
-                <h1>
-                    {IdNombre}
-                </h1>
-            </div>       
+                <h2>
+                            {IdNombre} 
+                    <br/>
+                            {Nombre},
+                    <br/>
+                            {Apellidos},
+                    <br/>
+                            {NumControl},
+                    <br/>
+                            {NumControl2},
+                    <br/>
+                            {FechaReg.toString()},
+                    <br/>
+                            {Experiencia},
+                    <br/>
+                            {(Activo) ? 'Activo' : 'No Activo'}
+
+                            Pasatiempos: {Pasatiempos}, <br/>
+                            Libros: {Libros[0]},   
+                                    {(Libros[1]) ? 'Activo' : 'No Activo'},
+                                    {Libros[2]}
+                </h2>
+            </div>
+       
         </>
     );
 };
