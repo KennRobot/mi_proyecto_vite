@@ -12,6 +12,7 @@ import MyFetchsAPIsPost from './functions/MyFetchPost.jsx'
 import MyFetchAPIsBlob from './functions/MyFetchBlob.jsx'
 import MyFetchAPIsPUT from './functions/MyFetchPut.jsx'
 import MyDataTypes from './methods/MyDataTypes.jsx'
+import MyObjects from './methods/MyObjects.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -25,5 +26,6 @@ createRoot(document.getElementById('root')).render(
     {/* <MyFetchAPIsPUT></MyFetchAPIsPUT> */}
     {/* <MyFetchAPIsBlob></MyFetchAPIsBlob> */}
     {/* <MyDataTypes></MyDataTypes> */}
+    <MyObjects></MyObjects>
   </StrictMode>,
 )
