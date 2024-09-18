@@ -10,7 +10,7 @@ function MyObjects(){
             direccion: 'Av. Mexico' 
         }
     }
-    //console.log("JSON Person:", JSON.stringify(person, null, 2))
+    console.log("JSON Person:", JSON.stringify(persona, null, 2))
     return(
         <>
             <div>
