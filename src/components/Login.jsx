@@ -2,7 +2,6 @@
 import { useReducer } from "react";
 import { useEffect } from "react";
 export const Login = () => {
-    //const [{validando, token}, dispatch] = useReducer(authReducer, initialState)
     
     const initialState = {
         validando: true,
@@ -31,6 +30,7 @@ export const Login = () => {
         }
     };
     
+    //const [{validando, token}, dispatch] = useReducer(authReducer, initialState)
     const [state, dispatch] = useReducer(authReducer, initialState)
     useEffect(() => {
         setTimeout(() => {
@@ -42,7 +42,7 @@ export const Login = () => {
         return (
         <>
             <h3>Login</h3>
-                <div className="ficAlertInfo_Div">
+                <div className="AlertInfo">
                     Validando Información...
                 </div>   
         </>
@@ -55,6 +55,11 @@ export const Login = () => {
                 username: 'Kenn',
                 nombre: 'Kennby'
             }
+        })
+    }
+    const logout = () => {
+        dispatch({
+            type: 'logout'
         })
     }
     return (
@@ -80,7 +85,7 @@ export const Login = () => {
                 ? ( 
                     <button
                         className="ficLogout_Button"
-                        onClick={ login }
+                        onClick={ logout }
                     >
                         Logout   
                     </button> 
