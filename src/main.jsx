@@ -14,6 +14,8 @@ import MyFetchAPIsPUT from './functions/MyFetchPut.jsx'
 import MyDataTypes from './methods/MyDataTypes.jsx'
 import MyObjects from './methods/MyObjects.jsx'
 import { Contador } from './components/Contador.jsx'
+import { ContadorHook } from './components/ContadorHook.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -28,6 +30,7 @@ createRoot(document.getElementById('root')).render(
     {/* <MyFetchAPIsBlob></MyFetchAPIsBlob> */}
     {/* <MyDataTypes></MyDataTypes> */}
     {/* <MyObjects></MyObjects> */}
-    <Contador></Contador>
+    {/* <Contador></Contador> */}
+    <ContadorHook></ContadorHook>
   </StrictMode>,
 )
