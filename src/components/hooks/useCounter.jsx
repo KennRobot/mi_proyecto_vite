@@ -1,3 +1,4 @@
+/* Nota 4.4 */
 import { useState } from "react";
 
 export const useCounter = (inicial) => {
