@@ -16,6 +16,7 @@ import MyObjects from './methods/MyObjects.jsx'
 import { Contador } from './components/Contador.jsx'
 import { ContadorHook } from './components/ContadorHook.jsx'
 import { Login } from './components/Login.jsx'
+import { Usuarios } from './components/Usuarios.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -33,6 +34,7 @@ createRoot(document.getElementById('root')).render(
     {/* <MyObjects></MyObjects> */}
     {/* <Contador></Contador> */}
     {/* <ContadorHook></ContadorHook> */}
-    <Login></Login>
+    {/* <Login></Login> */}
+    <Usuarios></Usuarios>
   </StrictMode>,
 )
