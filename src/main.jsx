@@ -16,7 +16,7 @@ import MyObjects from './methods/MyObjects.jsx'
 import { Contador } from './components/Contador.jsx'
 import { ContadorHook } from './components/ContadorHook.jsx'
 import { Login } from './components/Login.jsx'
-import { Usuarios } from './components/Usuarios.jsx'
+import { Usuarios } from './components/Usuarios.tsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -38,3 +38,4 @@ createRoot(document.getElementById('root')).render(
     <Usuarios></Usuarios>
   </StrictMode>,
 )
+

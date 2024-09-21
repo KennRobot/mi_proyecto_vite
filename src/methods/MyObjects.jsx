@@ -1,7 +1,7 @@
 /* Nota 4.2 */
 function MyObjects(){
     const persona = { 
-        nombre: 'Kennby', 
+        nombre: 'Equipo 4', 
         edad: 33, 
         direccion: { 
             pais: 'Mexico', 

@@ -52,8 +52,8 @@ export const Login = () => {
         dispatch({
             type: 'login',
             payload: {
-                username: 'Kenn',
-                nombre: 'Kennby'
+                username: 'Equipo4',
+                nombre: 'Equipo4'
             }
         })
     }
