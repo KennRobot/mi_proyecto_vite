@@ -1,5 +1,58 @@
 import { useState, useEffect } from "react";
 import reqRespApi from "../api/reqRes";
+import { Usuario, ReqRespUsuarioListado } from "../interfaces/reqRes.interface";
+
+export const Usuarios = () => {
+    const [usuarios, setUsuarios] = useState<Usuario[]>([]);
+
+    useEffect(() => {
+        // Llamado de la API con el tipo de dato que esperamos en la respuesta
+        reqRespApi.get<ReqRespUsuarioListado>('/users')
+            .then(resp => {
+                // Guardamos los datos de usuarios en el estado
+                setUsuarios(resp.data.data);
+            })
+            .catch(err => console.log(err));
+    }, []);
+
+    const renderItem = (usuario: Usuario) => {
+        return (
+            <tr key={usuario.id.toString()}>
+                <td>
+                    <img
+                        src={usuario.avatar}
+                        alt={usuario.first_name}
+                        style={{ width: 50, borderRadius: 100 }}
+                    />
+                </td>
+                <td>{usuario.first_name} {usuario.last_name}</td>
+                <td>{usuario.email}</td>
+            </tr>
+        );
+    };
+
+    return (
+        <>
+            <h3>Usuarios</h3>
+            <table className="table">
+                <thead>
+                    <tr>
+                        <th>Avatar</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {usuarios.map(usuario => renderItem(usuario))}
+                </tbody>
+            </table>
+        </>
+    );
+};
+/* NOTA 4.7 */
+/* 
+import { useState, useEffect } from "react";
+import reqRespApi from "../api/reqRes";
 import { Usuario, ReqRespUsuarioListado } from "../interfaces/reqRes";
 
 export const Usuarios = () => {
@@ -73,3 +126,6 @@ export const Usuarios = () => {
         </>
     );
 };
+
+
+*/
