@@ -1,3 +1,4 @@
+/* NOTA 4.6 */
 import { useState, useEffect } from "react";
 import reqRespApi from "../api/reqRes";
 import { Usuario, ReqRespUsuarioListado } from "../interfaces/reqRes.interface";
